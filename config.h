@@ -6,13 +6,13 @@ static const unsigned int gappx     = 6.5;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Terminus-Regular:size=10" };
-static const char dmenufont[]       = "Terminus-Regular:size=11";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#000000";
+static const char *fonts[]          = { "Iosevka-Regular:size=15" };
+static const char dmenufont[]       = "Iosevka-Regular:size=15";
+static const char col_gray1[]       = "#E1E4E1";
+static const char col_gray2[]       = "#E1E4E1";
+static const char col_gray3[]       = "#000000";
+static const char col_gray4[]       = "#AD1D1D";
+static const char col_cyan[]        = "#E1E4E1";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -58,7 +58,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-l", "25", NULL };
-static const char *termcmd[]  = { "xterm", "-b", "20", NULL };
+static const char *termcmd[]  = { "st", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
